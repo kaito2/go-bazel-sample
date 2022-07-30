@@ -1,0 +1,4 @@
+load("@bazel_gazelle//:def.bzl", "gazelle")
+
+# gazelle:prefix github.com/kaito2/go-bazel-sample/generate-build-files/app1
+gazelle(name = "gazelle")
