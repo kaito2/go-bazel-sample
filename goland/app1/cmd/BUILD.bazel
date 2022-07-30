@@ -5,7 +5,10 @@ go_library(
     srcs = ["main.go"],
     importpath = "github.com/kaito2/go-bazel-sample/goland/app1/cmd",
     visibility = ["//visibility:private"],
-    deps = ["//lib/example"],
+    deps = [
+        "//lib/example",
+        "@com_github_rs_xid//:go_default_library",
+    ],
 )
 
 go_binary(
