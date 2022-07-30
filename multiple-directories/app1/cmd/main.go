@@ -1,7 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"github.com/kaito2/go-bazel-sample/multiple-directories/lib/example"
+)
 
 func main() {
-	fmt.Println("Hello gazelle from app1")
+	c := example.Client{}
+	fmt.Println(c.Message())
 }
