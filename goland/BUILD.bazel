@@ -1,0 +1,15 @@
+### Gazelle ###
+load("@bazel_gazelle//:def.bzl", "gazelle")
+
+# gazelle:prefix github.com/kaito2/go-bazel-sample/goland
+gazelle(
+    name = "gazelle",
+    external = "vendored",
+)
+
+### Buildifier ###
+load("@com_github_bazelbuild_buildtools//buildifier:def.bzl", "buildifier")
+
+buildifier(
+    name = "buildifier",
+)
