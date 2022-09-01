@@ -7,7 +7,7 @@ go_library(
     visibility = ["//visibility:private"],
     deps = [
         "//lib/example",
-        "@com_github_rs_xid//:go_default_library",
+        "@com_github_rs_xid//:xid",
     ],
 )
 

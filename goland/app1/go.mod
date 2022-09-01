@@ -1,6 +1,6 @@
 module github.com/kaito2/go-bazel-sample/goland/app1
 
-go 1.18
+go 1.19
 
 replace github.com/kaito2/go-bazel-sample/goland/lib/example => ../lib/example
 
